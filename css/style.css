@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* Убирает линии обводки ***************************************************/
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+header,
+footer,
+nav,
+aside {
+  display: block;
+}
+
+/* Уравнивает параметры шрифтов на разных браузерах */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Прошу элементы форм наследовать стили элементов шрифта */
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/* Убирает крест у IE */
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  bottom: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+div[class*="__container"] {
+  margin: 0 auto;
+  max-width: 1215px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a[class*="__tel"]:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+/* ===================================== */
+.btn {
+  display: inline-block;
+  border: 1px solid #000000;
+  padding: 20px 30px;
+  line-height: calc(20 / 16);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  margin: 0px 0px 0px 42px;
+  background: url("../img/header/arrow.svg") 0px 0px no-repeat;
+  vertical-align: middle;
+  width: 8px;
+  height: 12px;
+}
+
+.btn:hover {
+  background: #000000;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover::after {
+  background: url("../img/header/arrow-white.svg") 0px 0px no-repeat;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-white {
+  font-size: 16px;
+  display: inline-block;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 20px 30px;
+  line-height: calc(20 / 16);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-white::after {
+  content: "";
+  display: inline-block;
+  margin: 0px 0px 0px 10px;
+  background: url("../img/header/arrow-white.svg") 0px 0px no-repeat;
+  vertical-align: middle;
+  width: 8px;
+  height: 12px;
+}
+
+.btn-white:hover {
+  background: #fff;
+  color: #000;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-white:hover::after {
+  background: url("../img/header/arrow.svg") 0px 0px no-repeat;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.title {
+  font-size: 48px;
+  line-height: calc(59 / 48);
+}
+
+.scroll {
+  display: inline-block;
+}
+
+.scroll__item {
+  display: block;
+  background: #313035;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.scroll__item:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+
+.scroll__item_active {
+  background: transparent;
+  border: 2px solid #8d8c92;
+}
+
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
